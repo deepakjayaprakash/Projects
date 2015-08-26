@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  App Title  -->
+	<title>Javascript assignment</title>
+	<!--  App Description  -->
+	
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	
+	<script type="text/javascript" src="js/main.js"></script>
+<style type="text/css">
+
+#left:hover,nav:hover,header:hover,#upper:hover,#syntax:hover,#copy1:hover,p:hover,#big:hover{
+	background-color: #383838;
+	font-size: 16pt;
+	transition: 0.50s;
+	color: plum;
+	/*width: 500px;*/
+}
+a:hover{
+
+	font-size: 20pt;
+	transition: 0.3s;
+	color: white;
+	color: aqua;
+	font-style: italic;
+}
+	#left{
+	width: 250px;
+	background-color: 
+	color: black;
+	float: left;
+	font-size: 11pt;
+transition: 1s;
+}
+
+
+#upper{
+float: left;
+width: 800px;
+color:#41c17d;
+text-align: center;
+height: 270px;
+transition: 0.50s;
+
+}
+#copy1{
+	background-color: black;
+	height: 50px;
+	width: 100%
+	text-align: center;
+	color: white;
+	clear: both;
+}
+
+#syntax{
+	float: left;
+width: 800px;
+transition: 0.50s;
+color:#41c17d;
+text-align: center;
+height: 250px;
+}
+
+</style>
+<script type="text/javascript">
+	function fprint(op)
+	{
+		var e=document.getElementById('tags');
+		var c=document.getElementById('code');
+
+		switch(op)
+		{
+				case '1': e.innerHTML=('<html>This is the text inside the html tag<</html>>');
+
+							c.innerHTML=('&lt;html&gt;This is the text inside the  html tag&lt;/html&gt');
+
+							break;
+							
+				case '2': e.innerHTML=('<body>This is the text inside the body tags</body>');
+						c.innerHTML=('&lt;body&gt;This is the text inside the tags&lt;/body&gt');
+					break;
+				case '3': e.innerHTML='<p>This is the text inside the p tag</p>';
+
+				c.innerHTML=('&lt;p&gt;This is the text inside the p tags&lt;/p&gt');
+					break;
+				case '4': e.innerHTML='<img src="pic.jpg" width="300" height="200" align="center " alt="" title="">';
+					c.innerHTML='&lt; img src="pic.jpg" width=" 200 " height="200 " align="center " alt="" title="" &gt;';
+
+
+					break;
+
+				case '5': e.innerHTML='<ol> \n <li>List element 1</li> \n <li>List element 2</li> \n </ol>';
+				c.innerHTML='&lt; ol &gt; \n &lt;  li &gt;List element 1&lt; /li &gt; <br> &lt; li &gt;List element 2&lt; /li &gt; \n <br> &lt; /ol &gt;';
+					break;
+
+				case '6': e.innerHTML='<ul> \n <li>List element 1</li> \n <li>List element 2</li> \n </ul>';
+
+					c.innerHTML='&lt; ul &gt; \n &lt;  li &gt;List element 1&lt; /li &gt; <br> &lt; li &gt;List element 2&lt; /li &gt; \n <br> &lt; /ul &gt;';
+					break;
+
+					
+				case '7': e.innerHTML='<a href="url">This is the text to be displayed</a>';
+					c.innerHTML='&lt; a href="url" &gt; This is the text to be displayed &lt; /a&gt;';
+
+
+					break;
+				case '8': e.innerHTML=' Text \n <form> <input type="text" placeholder="enter yuout text here"></form>'
+					 c.innerHTML=' Text \n  &lt; form &gt; &lt; input type="text" placeholder="enter yuout text here"&gt; &lt; /form&gt;'
+
+
+
+				break;
+
+
+				case '9':e.innerHTML=' gender \n <form> <input type="radio" name="name">male <br><br> <input type="radio" name="name">female</form>';
+
+				 c.innerHTML=' gender \n  &lt; form &gt; &lt; input type="radio" name="name" &gt;male <br><br> &lt; input type="radio" name="name" &gt; female &lt; /form&gt; ';
+
+
+
+
+					break;
+				case '10': 
+
+					e.innerHTML='<form> autmobile <br> <input type="checkbox" name="name">car <br> <input type="checkbox" name="name">bike</form>';
+					
+					c.innerHTML=' &lt; form &gt; autmobile <br> &lt; input type="checkbox" name="name" &gt; car <br> &lt; input type="checkbox" name="name"&gt; bike&lt; /form&gt; ';
+					break;
+
+
+				case '11': e.innerHTML='<form> Enter a number<input type="number" name="name"></form>';
+				c.innerHTML='&lt; form &gt; Enter a number &lt; input type="number" name="name" &gt; &lt; /form&gt;';
+
+					break;
+
+				case '12': e.innerHTML='<form> <input type="email" name="name">Enter your mail id </form>';
+				c.innerHTML='&lt; form &gt; &lt; input type="email" name="name" &gt; &lt; /form&gt;';
+
+					break;
+				case '13': e.innerHTML='<form> <input type="password" name="name"></form>';
+				c.innerHTML=' &lt; form &gt;  &lt; input type="password" name="name" &gt; &lt;/form&gt;';
+					
+					break;
+
+
+				case '14': e.innerHTML='<form> <input type="range" name="name" min="1" max="5"></form>';
+
+				c.innerHTML=' &lt; form &gt;  &lt; input type="range" name="name" min="1" max="5" &gt; &lt;/form&gt;';
+					
+
+					break;
+				case '15': e.innerHTML='<form> <input type="date" name="name" ></form>';
+
+				c.innerHTML=' &lt; form &gt;  &lt; input type="date" name="name" &gt; &lt;/form&gt;';
+					break;
+
+
+
+
+
+		}
+
+	}
+
+
+
+	</script>
+
+
+</head>
+<body>
+	
+	<!--  Header Section  -->
+	<header>
+		<div class="container">
+			<div class="heading pull-left animated wow bounceInLeft">
+				<h1>Easy html</h1>
+			</div>
+
+			
+			<nav class="pull-left">
+				<ul class="list-unstyled">
+					<li class="animated wow bounceInLeft" data-wow-delay="0s"><a href="homepage.html">	Home</a></li>
+					<li class="animated wow bounceInLeft" data-wow-delsay="0s"><a href="#about">	About</a></li>
+					<li class="animated wow bounceInLeft" data-wow-delay=".4s"><a href="tag.html">Tag generator</a></li>
+
+					<li class="animated wow bounceInLeft" data-wow-delay=".8s"><a href="css.html">Image Animations</a></li>
+					<li class="animated wow bounceInLeft" data-wow-delay="1.2s"><a href="#contact">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			
+
+			
+		</div>
+
+	</header>
+	<!--  End Header Section  -->
+
+<div class="container">
+	
+			<div class="text-center animated wow bounceInLeft" style="float:left;">
+				
+
+<div id="left">
+	<h1>Options</h1>
+	<ul style="list-style-type: none;">
+		<li id="string"><a href="javascript:fprint('1')">HTML</a> </li>
+		<li id="string" ><a href="javascript:fprint('2')">BODY</a> </li>
+		<li id="string" ><a href="javascript:fprint('3')">Paragraph</a> </li>
+		<li id="string" ><a href="javascript:fprint('4')">IMAGE</a> </li>
+		<ul>LISTS
+		<li id="string" ><a href="javascript:fprint('5')">Ordered</a> </li>
+		<li id="string" ><a href="javascript:fprint('6')">Unorederd</a> </li>
+		</ul>
+
+		<li id="string" ><a href="javascript:fprint('7')">LINK</a> </li>
+		<ul>FORMS
+		<li id="string" ><a href="javascript:fprint('8')">TEXT</a> </li>
+		<li id="string" ><a href="javascript:fprint('9')">RADIO</a> </li>
+		<li id="string" ><a href="javascript:fprint('10')">CHECK BOX</a> </li>
+		<li id="string" ><a href="javascript:fprint('11')">NUMBER</a> </li>
+		<li id="string" ><a href="javascript:fprint('12')">EMAIL</a> </li>
+		<li id="string" ><a href="javascript:fprint('13')">PASSWORD</a> </li>
+		<li id="string" ><a href="javascript:fprint('14')">RANGE</a> </li>
+		<li id="string" ><a href="javascript:fprint('15')">DATE</a> </li>
+		
+		</ul> 
+
+
+	</ul>
+
+
+</div>
+
+<div id="syntax"><h1>Syntax </h1><span id="code"> </span></div>
+<div id="upper"><h1 >DEMO</h1><span id="tags"> </span></div>
+<div id="copy1"> created by Deepak Jayaprakash.     &copy; reserved</div>
+
+
+
+</body>
+</html>

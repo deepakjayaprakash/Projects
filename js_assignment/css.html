@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  App Title  -->
+	<title>Javascript assignment</title>
+	<!--  App Description  -->
+	
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	
+	<script type="text/javascript" src="js/main.js"></script>
+<style type="text/css">
+
+#left:hover,nav:hover,header:hover,#upper:hover,#syntax:hover,#copy1:hover,p:hover,#big:hover{
+	background-color: #383838;
+	font-size: 16pt;
+	transition: 0.50s;
+	color: plum;
+	/*width: 500px;*/
+}
+a:hover{
+
+	font-size: 20pt;
+	transition: 0.3s;
+	color: white;
+	color: aqua;
+	font-style: italic;
+}
+	#left{
+	width: 250px;
+	background-color: 
+	color: black;
+	float: left;
+	font-size: 11pt;
+	height: 800px;
+transition: 1s;
+}
+
+
+#upper{
+float: left;
+width: 800px;
+color:#41c17d;
+text-align: center;
+height: 500px;
+transition: 0.50s;
+
+}
+#copy1{
+	background-color: black;
+	height: 50px;
+	width: 100%
+	text-align: center;
+	color: white;
+	clear: both;
+}
+
+#syntax{
+	float: left;
+width: 800px;
+transition: 0.50s;
+color:#41c17d;
+text-align: center;
+height: 250px;
+}
+
+#pic1:hover {-webkit-transform:scale(1.2);transform:scale(1.2);}#pic1{-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}
+
+#container:hover #pic2 {-webkit-transform:scale(1.3);transform:scale(1.3);transition: 0.7s;}#container {overflow:hidden;width:200px;height:150px;}#pic3 { 
+	-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}
+
+#container:hover #pic3 {-webkit-transform:scale(1);transform:scale(1);}#container {overflow:hidden;width:200px;height:150px;}#pic3 {-webkit-transform:scale(1.3);>transform:scale(1.3);-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}
+
+#container:hover #pic4{-webkit-transform: rotateY(180deg);
+	-webkit-transform-style: preserve-3d;transform: rotateY(180deg);transform-style: preserve-3d;}#container #pic4, #container:hover #pic4 {-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}
+
+#pic5:hover {-webkit-box-shadow: 0px 0px 15px 15px #fff;box-shadow: 0px 0px 15px 15px #fff;border-radius:50%;opacity: 0.6;-webkit-transform: rotate(720deg);transform: rotate(720deg);}#pic5 {opacity: 1;-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}
+
+#pic6:hover {border-radius:50%;box-shadow: 0 10px 6px -6px white;}#pic6{-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}
+
+#pic7:hover {-webkit-transform: rotate(45deg);transform: rotate(45deg);}#pic7{-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}
+
+
+
+</style>
+<script type="text/javascript">
+	function fprint(op)
+	{
+		var e=document.getElementById('tags');
+		var c=document.getElementById('code');
+		//c.innerHTML=('<img id="pic" src="pic.jpg" >');
+
+		switch(op)
+		{
+				case '1': e.innerHTML=('Image Size \<br\> .image:hover {-webkit-transform:scale(1.2);\<br\>transform:scale(1.2);}\<br\>.image {-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}');
+
+					c.innerHTML=('<img id="pic1" src="pic.jpg" >');
+
+
+							break;
+							
+				case '2': e.innerHTML=('.container:hover .image {-webkit-transform:scale(1.3);\<br\>transform:scale(1.3);}\<br\>.container {overflow:hidden;width:200px;height:150px;}.image {\<br\>-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}');
+
+
+						c.innerHTML=('<div id="container"><img id="pic2" src="pic.jpg" ></div>');
+
+					break;
+
+				case '3': e.innerHTML='.container:hover .image {\<br\>-webkit-transform:scale(1);transform:scale(1);}.container {overflow:hidden;width:200px;height:150px;}\<br\>.image {-webkit-transform:scale(1.3);\<br\>transform:scale(1.3);-webkit-transition: all 0.7s ease;transition: all 0.7s ease;}';
+				
+				c.innerHTML=('<div id="container"><img id="pic3" src="pic.jpg" ></div>');
+
+					break;
+
+				case '4': e.innerHTML='Flip<br>.container:hover .image{-webkit-transform: rotateY(180deg);\<br\>-webkit-transform-style: preserve-3d;\<br\>transform: rotateY(180deg);transform-style: preserve-3d;}\<br\>.container .image, .container:hover .image {-webkit-transition: all 0.7s ease;\<br\>transition: all 0.7s ease;}';
+
+					c.innerHTML=('<div id="container"><img id="pic4" src="pic.jpg" ></div>');
+
+				
+
+					break;
+
+				case '5': e.innerHTML='Transformations<br>.image:hover {\<br\>-webkit-box-shadow: 0px 0px 15px 15px #fff;\<br\>box-shadow: 0px 0px 15px 15px #fff;\<br\>border-radius:50%;\<br\>opacity: 0.6;\<br\>-webkit-transform: rotate(720deg);\<br\>transform: rotate(720deg);}\<br\>.image {opacity: 1;\<br\>-webkit-transition: all 0.7s ease;\<br\>transition: all 0.7s ease;}';
+				
+				c.innerHTML=('<img id="pic5" src="pic.jpg" >');
+
+					break;
+
+				case '6': e.innerHTML='Border radius<br>.image:hover {border-radius:50%;box-shadow: 0 10px 6px -6px grey;}\<br\>.image {-webkit-transition: all 0.7s ease;\<br\>transition: all 0.7s ease;}';
+
+					c.innerHTML=('<img id="pic6" src="pic.jpg" >');
+
+					break;
+					
+				case '7': e.innerHTML='Rotation(2D)<br>.image:hover {-webkit-transform: rotate(45deg);\<br\>transform: rotate(45deg);}.image {\<br\>-webkit-transition: all 0.7s ease;\<br\>transition: all 0.7s ease;}';
+					
+					c.innerHTML=('<img id="pic7" src="pic.jpg" >');
+
+
+					break;
+				
+
+		}
+
+	}
+
+
+
+	</script>
+
+
+</head>
+<body>
+	
+	<!--  Header Section  -->
+	<header>
+		<div class="container">
+			<div class="heading pull-left animated wow bounceInLeft">
+				<h1>Easy html</h1>
+			</div>
+
+			
+			<nav class="pull-left">
+				<ul class="list-unstyled">
+					<li class="animated wow bounceInLeft" data-wow-delay="0s"><a href="homepage.html">	Home</a></li>
+					<li class="animated wow bounceInLeft" data-wow-delsay="0s"><a href="#about">	About</a></li>
+					<li class="animated wow bounceInLeft" data-wow-delay=".4s"><a href="tag.html">Tag generator</a></li>
+
+					<li class="animated wow bounceInLeft" data-wow-delay=".8s"><a href="css.html">Image Animations</a></li>
+					<li class="animated wow bounceInLeft" data-wow-delay="1.2s"><a href="#contact">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			
+
+			
+		</div>
+
+	</header>
+	<!--  End Header Section  -->
+
+<div class="container">
+	
+			<div class="text-center animated wow bounceInLeft" style="float:left;">
+				
+
+<div id="left">
+	<h1>Options</h1>
+	<ul style="list-style-type: none;">
+		<li id="string"><a href="javascript:fprint('1')">Image Size</a> </li>
+		<li id="string" ><a href="javascript:fprint('2')">Zoom in</a> </li>
+		<li id="string" ><a href="javascript:fprint('3')">Zoom out</a> </li>
+		<li id="string" ><a href="javascript:fprint('4')">Flip</a> </li>
+		
+		<li id="string" ><a href="javascript:fprint('5')">Transformation</a> </li>
+		<li id="string" ><a href="javascript:fprint('6')">Border Radius</a> </li>
+		
+
+		<li id="string" ><a href="javascript:fprint('7')">Rotation</a> </li>
+		
+	</ul>
+
+
+</div>
+
+<div id="syntax"><h1>Demo </h1><span id="code"> </span></div>
+<div id="upper"><h1 >TAG</h1><span id="tags"> </span></div>
+<div id="copy1"> created by Deepak Jayaprakash.     &copy; reserved</div>
+
+
+
+</body>
+</html>
